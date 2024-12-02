@@ -1,47 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/dist/style.css">
-</head>
-<body class="bg-white-700">
-   
-    <nav class="bg-blue-900 text-white px-6 py-2 flex justify-between items-center">
-        <div class="text-lg font-bold">CAL</div>
-        <div class="space-x-4">
-          <a href="#" class="hover:underline">History</a>
-          <a href="#" class="hover:underline">SK Officials</a>
-          <a href="#" class="hover:underline">SK Activities</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+   <link rel="stylesheet" href="../dist/style.css">
+  </head>
+  <body>
+    
+    <nav class="text-center text-white bg-blue-900">
+      <div
+        class="container flex items-center justify-between h-20 px-2 mx-auto"
+      >
+        <!-- Logo -->
+        <div class="text-lg font-bold">
+          <img src="./Images/Logo.png" alt="Logo" class="w-24 h-24" />
         </div>
-        <div>
-          <a href="#" class="hover:underline">Log In</a> | <a href="#" class="hover:underline">Register</a>
+
+        <!-- Nav Links -->
+        <div class="hidden space-x-8 text-xl md:flex">
+          <a href="#history" class="uppercase hover:text-gray-300">History</a>
+          <a href="#activities" class="uppercase hover:text-gray-300">Sk Activities</a>
+          <a href="#" class="uppercase hover:text-gray-300">Sk Officials</a>
         </div>
-      </nav>
 
+        <!-- Buttons -->
+        <div class="hidden space-x-4 md:flex">
+          <a href="#" class="px-4 py-2 bg-blue-600 rounded-md hover:bg-blue-700"
+            >Sign Up</a
+          >
+          <a href="#" class="px-4 py-2 bg-gray-600 rounded-md hover:bg-gray-700"
+            >Log In</a
+          >
+        </div>
 
-      <main class="w-full max-w-screen-xl">
-        <div class="p-6 flex flex-col items-center">
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img src="./Images/Logo.png" alt="SK Logo" class="w-full h-full object-contain">
+        <!-- Hamburger Menu -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-toggle" class="focus:outline-none">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-x-0 z-50 hidden h-56 bg-blue-900 md:hidden"
+      >
+        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Home</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-600">About</a>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-600">Services</a>
+        <div class="border-t border-blue-600">
+          <a
+            href="#"
+            class="block px-4 py-2 mt-2 text-center bg-blue-600 rounded-md hover:bg-blue-700"
+            >Sign Up</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 mt-2 text-center bg-gray-600 rounded-md hover:bg-gray-700"
+            >Log In</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="text-gray-600 min-h-auto" id="history">
+      <div
+        class="container flex flex-col-reverse items-center px-4 py-16 mx-auto md:flex-row"
+      >
+        <!-- Text Content -->
+        <div
+          class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 md:items-start md:text-left md:mb-0"
+        >
+          <h1
+            class="mb-4 text-2xl font-medium text-gray-900 sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl"
+          >
+            Empowered Youth, Empowered Democracy
+          </h1>
+          <p class="mb-8 text-lg leading-relaxed sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            ”Know your rights, demand transparent leadership.”
+          </p>
+        </div>
+        <!-- Image -->
+        <div class="w-5/6 mb-6 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="./Images/Sk.png"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="px-2 py-6 mx-auto border-t border-gray-800 max-w-screen-2xl">
+      <div class="container px-2 mx-auto">
+        <div class="flex flex-wrap items-center justify-between mt-8">
+          <div class="flex justify-center w-full p-2 md:w-1/2">
+            <div class="w-full max-w-md p-4 mx-auto overflow-hidden rounded-lg">
+              <div class="w-full h-40 sm:h-60 md:h-72 lg:h-80 xl:h-96">
+                <img
+                  src="./Images/./brgy.webp"
+                  alt="sample"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center w-full p-2 md:w-1/2">
+            <div
+              class="max-w-md py-6 mx-auto text-center md:py-10 lg:py-12 xl:py-16 md:text-left"
+            >
+              <h1
+                class="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+              >
+                Headline
+              </h1>
+              <p
+                class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              >
+                Barangay Catarman is a coastal barangay in the municipality of
+                Cordova, Cebu, Philippines.
+              </p>
+              <button
+                class="px-5 py-1 mt-4 text-[9px] text-white bg-blue-900 rounded-lg sm:text-xs md:text-sm lg:text-base xl:text-lg"
+              >
+                Read more
+              </button>
+            </div>
           </div>
         </div>
-      </main>
 
-    <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <p class="mb-8 leading-relaxed">Barangay Catarman is a coastal barangay 
-                in the municipality of Cordova, Cebu, Philippines.
-                </p>
+        <div
+          class="flex flex-col-reverse flex-wrap items-center justify-between md:flex-row"
+        >
+          <div class="flex justify-center w-full p-2 md:w-1/2">
+            <div
+              class="max-w-md py-6 mx-auto text-center md:py-10 lg:py-12 xl:py-16 md:text-left"
+            >
+              <h1
+                class="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+              >
+                Headline
+              </h1>
+              <p
+                class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"
+              >
+                Description goes here in 2-4 lines to give just a brief outline
+              </p>
+              <button
+                class="px-5 py-1 mt-4 text-[9px] text-white bg-black rounded-lg sm:text-xs md:text-sm lg:text-base xl:text-lg"
+              >
+                CTA
+              </button>
+            </div>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="./Images/Logo.png">
+
+          <div class="flex justify-center w-full p-2 md:w-1/2">
+            <div class="w-full max-w-md p-4 mx-auto overflow-hidden rounded-lg">
+              <div class="w-full h-40 sm:h-60 md:h-72 lg:h-80 xl:h-96">
+                <img
+                  src="./Images/location.jpg"
+                  alt="sample"
+                  class="object-cover w-full h-full rounded-lg"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
-</body>
+
+    <section id="activities" class="max-w-screen-xl px-6 py-6 mx-auto">
+
+      <h1 class="text-2xl text-center text-black uppercase">Sk Activities/events</h1>
+
+      <div class="container p-6 mx-auto">
+        <!-- Card Grid -->
+        <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Card 1 -->
+            <div class="p-10 bg-blue-900 rounded-xl">
+                <img src="./Images/SKB.jpg" alt="KK Assembly" class="mb-4 rounded-md">
+                <div class="p-4 bg-white">
+                <h3 class="text-lg font-bold text-center text-black">KK ASSEMBLY</h3>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-10 bg-blue-900 rounded-lg shadow-lg">
+                <img src="./Images/MISS.jpg" alt="Linggo ng Kabataan" class="mb-4 rounded-md">
+                <div class="p-4 bg-white">
+                <h3 class="text-lg font-bold text-center text-black ">LINGGO NG KABATAAN</h3>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-10 bg-blue-900 rounded-lg shadow-lg">
+                <img src="./Images/lnk.png" alt="Soltera sa Catarman" class="mb-4 rounded-md">
+                <div class="p-4 bg-white">
+                <h3 class="text-lg font-bold text-center text-black">SOLTERA SA CATARMAN</h3>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/landingPage.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
