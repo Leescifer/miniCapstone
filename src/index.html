@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Navbar</title>
-   <link rel="stylesheet" href="../dist/style.css">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    
-    <nav class="text-center text-white bg-blue-900">
+
+    <nav class="sticky text-center text-white bg-blue-900">
       <div
         class="container flex items-center justify-between h-20 px-2 mx-auto"
       >
@@ -19,9 +20,13 @@
 
         <!-- Nav Links -->
         <div class="hidden space-x-8 text-xl md:flex">
-          <a href="#history" class="uppercase hover:text-gray-300">History</a>
-          <a href="#activities" class="uppercase hover:text-gray-300">Sk Activities</a>
-          <a href="#" class="uppercase hover:text-gray-300">Sk Officials</a>
+          <a href="history.html" class="uppercase hover:text-gray-300">History</a>
+          <a href="#activities" class="uppercase hover:text-gray-300"
+            >Sk Activities</a
+          >
+          <a href="#officials" class="uppercase hover:text-gray-300"
+            >Sk Officials</a
+          >
         </div>
 
         <!-- Buttons -->
@@ -65,35 +70,35 @@
       </div>
     </nav>
 
-    <section class="text-gray-600 min-h-auto" id="history">
+    <section id="history" class="text-gray-800 bg-white">
       <div
         class="container flex flex-col-reverse items-center px-4 py-16 mx-auto md:flex-row"
       >
         <!-- Text Content -->
         <div
-          class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 md:items-start md:text-left md:mb-0"
+          class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 md:items-start md:text-left"
         >
-          <h1
-            class="mb-4 text-2xl font-medium text-gray-900 sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl"
-          >
+          <h1 class="text-3xl font-bold text-blue-900 sm:text-4xl">
             Empowered Youth, Empowered Democracy
           </h1>
-          <p class="mb-8 text-lg leading-relaxed sm:text-sm md:text-base lg:text-lg xl:text-xl">
-            ”Know your rights, demand transparent leadership.”
+          <p class="mt-4 text-2xl leading-relaxed text-gray-500">
+            “Know your rights, demand transparent leadership.”
           </p>
+
+          <a href="" class="ml-2 text-lg">Read more</a>
         </div>
         <!-- Image -->
-        <div class="w-5/6 mb-6 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
+        <div class="w-full md:w-1/2">
           <img
-            class="object-cover object-center rounded"
-            alt="hero"
+            class="object-cover object-center w-full rounded-lg"
             src="./Images/Sk.png"
+            alt="SK"
           />
         </div>
       </div>
     </section>
 
-    <section class="px-2 py-6 mx-auto border-t border-gray-800 max-w-screen-2xl">
+    <section class="px-2 py-6 mx-auto bg-blue-50 max-w-screen-2xl">
       <div class="container px-2 mx-auto">
         <div class="flex flex-wrap items-center justify-between mt-8">
           <div class="flex justify-center w-full p-2 md:w-1/2">
@@ -115,7 +120,7 @@
               <h1
                 class="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                Headline
+                Barangay Hall
               </h1>
               <p
                 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"
@@ -142,17 +147,18 @@
               <h1
                 class="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
               >
-                Headline
+                Location
               </h1>
               <p
                 class="mt-2 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"
               >
-                Description goes here in 2-4 lines to give just a brief outline
+                Barangay Catarman is a coastal barangay in the municipality of
+                Cordova, Cebu, Philippines.
               </p>
               <button
                 class="px-5 py-1 mt-4 text-[9px] text-white bg-black rounded-lg sm:text-xs md:text-sm lg:text-base xl:text-lg"
               >
-                CTA
+                Read more
               </button>
             </div>
           </div>
@@ -172,44 +178,248 @@
       </div>
     </section>
 
-
-
     <section id="activities" class="max-w-screen-xl px-6 py-6 mx-auto">
-
-      <h1 class="text-2xl text-center text-black uppercase">Sk Activities/events</h1>
+      <h1 class="text-2xl text-center text-black uppercase">
+        Sk Activities/events
+      </h1>
 
       <div class="container p-6 mx-auto">
         <!-- Card Grid -->
         <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <!-- Card 1 -->
-            <div class="p-10 bg-blue-900 rounded-xl">
-                <img src="./Images/SKB.jpg" alt="KK Assembly" class="mb-4 rounded-md">
-                <div class="p-4 bg-white">
-                <h3 class="text-lg font-bold text-center text-black">KK ASSEMBLY</h3>
-              </div>
+          <!-- Card 1 -->
+          <div class="p-10 bg-blue-900 rounded-xl">
+            <img
+              src="./Images/SKB.jpg"
+              alt="KK Assembly"
+              class="mb-4 rounded-md"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="text-lg font-bold text-center text-black">
+                KK ASSEMBLY
+              </h3>
             </div>
+          </div>
 
-            <!-- Card 2 -->
-            <div class="p-10 bg-blue-900 rounded-lg shadow-lg">
-                <img src="./Images/MISS.jpg" alt="Linggo ng Kabataan" class="mb-4 rounded-md">
-                <div class="p-4 bg-white">
-                <h3 class="text-lg font-bold text-center text-black ">LINGGO NG KABATAAN</h3>
-              </div>
+          <!-- Card 2 -->
+          <div class="p-10 bg-blue-900 rounded-lg shadow-lg">
+            <img
+              src="./Images/MISS.jpg"
+              alt="Linggo ng Kabataan"
+              class="mb-4 rounded-md"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="text-lg font-bold text-center text-black">
+                LINGGO NG KABATAAN
+              </h3>
             </div>
+          </div>
 
-            <!-- Card 3 -->
-            <div class="p-10 bg-blue-900 rounded-lg shadow-lg">
-                <img src="./Images/lnk.png" alt="Soltera sa Catarman" class="mb-4 rounded-md">
-                <div class="p-4 bg-white">
-                <h3 class="text-lg font-bold text-center text-black">SOLTERA SA CATARMAN</h3>
-              </div>
+          <!-- Card 3 -->
+          <div class="p-10 bg-blue-900 rounded-lg shadow-lg">
+            <img
+              src="./Images/lnk.png"
+              alt="Soltera sa Catarman"
+              class="mb-4 rounded-md"
+            />
+            <div class="p-4 bg-white">
+              <h3 class="text-lg font-bold text-center text-black">
+                SOLTERA SA CATARMAN
+              </h3>
             </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <section id="officials" class="text-center text-black bg-gray-100">
+      <div class="container py-10 mx-auto">
+        <!-- Title -->
+        <h1 class="mb-10 text-2xl sm:text-3xl">SK ORGANIZATION STRUCTURE</h1>
+
+        <!-- Top Row: Seals and Mayor -->
+        <div
+          class="flex flex-wrap items-center justify-center mb-10 space-x-0 sm:space-x-10"
+        >
+          <!-- Seal -->
+          <div
+            class="flex items-center justify-center mb-4 bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16 sm:mb-0"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="Seal"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+          <!-- Mayor -->
+          <div
+            class="flex items-center justify-center mb-4 bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16 sm:mb-0"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="Mayor"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+          <!-- Seal -->
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="Seal"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+        </div>
+
+        <!-- Barangay Captain -->
+        <div class="flex justify-center mb-10">
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="Barangay Captain"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+        </div>
+
+        <!-- SK Chairman, Treasurer, and Secretary -->
+        <div class="flex flex-wrap justify-center gap-4 mb-10 sm:gap-10">
+          <!-- SK Treasurer -->
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="SK Treasurer"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+          <!-- SK Chairman -->
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="SK Chairman"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+          <!-- SK Secretary -->
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="SK Secretary"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+        </div>
+
+        <!-- SK Councilors -->
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-10">
+          <!-- Councilors -->
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="SK Councilor 1"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="SK Councilor 2"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="SK Councilor 3"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="SK Councilor 4"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+          <div
+            class="flex items-center justify-center bg-blue-300 rounded-full w-14 h-14 sm:w-16 sm:h-16"
+          >
+            <img
+              src="./Images/brgy.webp"
+              alt="SK Councilor 5"
+              class="object-cover w-full h-full rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-blue-950">
+      <div
+        class="container flex flex-col items-center px-5 py-8 mx-auto sm:flex-row"
+      >
+        <a
+          class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start"
+        >
+          <!-- Logo Image -->
+          <img
+            src="./Images/Logo.png"
+            alt="Logo"
+            class="w-16 h-16 rounded-full"
+          />
+        </a>
+
+        <p
+          class="mt-4 text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0"
+        >
+          © 2024 CAL.
+          <br />
+          All rights reserved
+        </p>
+        <span
+          class="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start"
+        >
+          <a class="text-white">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a class="ml-3 text-white">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a class="ml-3 text-white">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a class="ml-3 text-white">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </span>
+      </div>
+    </footer>
+
     <script src="./js/landingPage.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
