@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Landing Page</title>
+    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body class="bg-white">
+
+
+    <header>
+        <nav class="text-center text-white bg-blue-700">
+            <div class="container flex items-center justify-between h-20 px-2 mx-auto">
+                <!-- Logo -->
+                <div class="text-lg font-bold">
+                    <img src="../Images/Logo.png" alt="Logo" class="w-24 h-24" />
+                </div>
+
+                <!-- Nav Links -->
+                <div class="hidden space-x-8 text-xl md:flex">
+                    <a href="#history" class="uppercase hover:text-gray-300">History</a>
+                    <a href="#activities" class="uppercase hover:text-gray-300">Sk Activities</a>
+                    <a href="#" class="uppercase hover:text-gray-300">Sk Officials</a>
+                </div>
+
+                <!-- Buttons -->
+                <div class="hidden space-x-4 md:flex">
+                    <a href="../index.html" class="px-6 py-3 bg-blue-600 rounded-md hover:bg-white hover:text-blue-600">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </a>
+                    <a href="#" class="px-6 py-3 bg-white rounded-md hover:bg-blue-600 text-blue-600 hover:text-white">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <div class="flex items-center md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="fixed inset-x-0 z-50 hidden h-56 bg-blue-900 md:hidden">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">Home</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">About</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-600">Services</a>
+                <div class="border-t border-blue-600">
+                    <a href="#" class="block px-4 py-2 mt-2 text-center bg-blue-600 rounded-md hover:bg-blue-700">Sign
+                        Up</a>
+                    <a href="#" class="block px-4 py-2 mt-2 text-center bg-gray-600 rounded-md hover:bg-gray-700">Log
+                        In</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="text-gray-600 max-h-max" id="history">
+        <div class="container flex flex-col-reverse items-center px-4 py-16 mx-auto md:flex-row">
+            <!-- Text Content -->
+            <div
+                class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 md:items-start md:text-left md:mb-0">
+                <h1 class="mb-4 text-2xl font-medium text-gray-900 sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl">
+                    Empowered Youth, Empowered Democracy
+                </h1>
+                <p class="mb-8 text-xl leading-relaxed sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                    ”Know your rights, demand transparent leadership.”
+                </p>
+            </div>
+            <!-- Image -->
+            <div class="w-5/6 mb-6 lg:max-w-lg lg:w-full md:w-1/2 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="../Images/Sk.png" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white bg-blue-700">
+        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <span class="ml-3 text-xl">
+                    <img src="../Images/Logo.png" alt="" class="w-14 h-14">
+                </span>
+            </a>
+            <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+                © 2024 CAL. All rights reserved
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-white">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a class="ml-3 text-white">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a class="ml-3 text-white">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a class="ml-3 text-white">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="../js/landingPage.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
