@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acitivites</title>
+</head>
+<body>
+
+    <header>
+        <nav class="text-center text-white bg-blue-700">
+            <div class="container flex items-center justify-between h-20 px-2 mx-auto">
+                <!-- Logo -->
+                <div class="text-lg font-bold">
+                    <img src="../Images/Logo.png" alt="Logo" class="w-24 h-24" />
+                </div>
+
+                <!-- Nav Links (Desktop) -->
+                <div class="hidden space-x-8 text-lg md:flex">
+                    <a href="#history" class="uppercase hover:text-gray-300">History</a>
+                    <a href="#officials" class="uppercase hover:text-gray-300">Sk Officials</a>
+                    <a href="#activities" class="uppercase hover:text-gray-300">Sk Activities</a>
+                </div>
+
+                <!-- Buttons (Desktop) -->
+                <div class="hidden space-x-4 md:flex">
+                    <a href="../index.html" class="px-6 py-3 bg-blue-600 rounded-md hover:bg-white hover:text-blue-600">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </a>
+                    <a href="#" class="px-6 py-3 bg-white rounded-md hover:bg-blue-600 text-blue-600 hover:text-white">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                </div>
+
+                <!-- Hamburger Menu (Mobile) -->
+                <div class="flex items-center md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Backdrop for Sidebar (Mobile Only) -->
+        <div id="backdrop" class="fixed inset-0 bg-black opacity-50 z-40 hidden md:hidden"></div>
+
+        <!-- Sidebar (Mobile Only) -->
+        <div id="sidebar"
+            class="fixed top-0 left-0 w-64 h-full bg-blue-900 z-50 transform -translate-x-full transition-transform ease-in-out duration-300 md:hidden">
+            <div class="flex justify-between items-center p-4 border-b border-blue-600">
+                <img src="../Images/Logo.png" alt="Logo" class="w-12 h-12" />
+                <button id="close-menu" class="text-white text-2xl">&times;</button>
+            </div>
+            <div class="flex flex-col px-6 space-y-4 text-white text-center mt-6">
+                <a href="#history" class="uppercase hover:text-gray-300">History</a>
+                <a href="#officials" class="uppercase hover:text-gray-300">Sk Officials</a>
+                <a href="#activities" class="uppercase hover:text-gray-300">Sk Activities</a>
+                <div class="border-t border-blue-600 px-4 py-10 flex justify-between">
+                    <a href="../index.html" class="px-6 py-3 bg-blue-600 rounded-md hover:bg-white hover:text-blue-600">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </a>
+                    <a href="#" class="px-6 py-3 bg-white rounded-md hover:bg-blue-600 text-blue-600 hover:text-white">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
